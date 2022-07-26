@@ -550,6 +550,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
+    opacity: 0.8;
+
 }
 
 @media(min-width: 901px) {
