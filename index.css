@@ -343,6 +343,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav__items {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -435,7 +436,45 @@ body:not(.user-is-tabbing) a:focus {
         transform: scale(.8);
     }
 }
-
+/* --------------------------------------- */
+/* ----- Testimonials ----- */
+/* --------------------------------------- */
+.testimonials__content {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.testimonials__content .testimonial__text {
+    width: calc(50% - 5rem);
+}
+.testimonials__content .person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.testimonials__content .testimonial__image {
+    height: 5rem;
+    border-radius: 50%;
+    display: block;
+}
+.testimonials__content .person__name span {
+    display: block;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+.testimonials__content .person__name span:first-child {
+    font-weight: 600;
+}
+@media(max-width: 900px) {
+    .testimonials__content {
+        align-items: initial;
+        flex-direction: column;
+    }
+    .testimonials__content .testimonial__text {
+        width: 100%;
+    }
+}
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
