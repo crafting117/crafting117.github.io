@@ -536,6 +536,12 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 0 0 10rem;
     }
+    .work__box.left {
+        flex-direction: row-reverse;
+    }
+    .work__box.left .work__image-box {
+        margin: 0 10rem 0 0;
+    }
 }
 
 @media(max-width: 900px) {
