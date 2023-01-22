@@ -559,7 +559,9 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
     filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
@@ -570,13 +572,13 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 1240px) {
     .client__logos {
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
         padding: var(--gutter-normal);
     }
 
-    .client__logo:not(:last-of-type) {
+    /* .client__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
-    }
+    } */
 }
 
 /* --------------------------------------- */
