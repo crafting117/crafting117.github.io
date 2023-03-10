@@ -260,6 +260,12 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
+@media (max-width: 482px) {
+    .btn.phone {
+        margin-top: 1rem;
+    }
+}
+
 .link__text {
     position: relative;
     display: inline-block;
